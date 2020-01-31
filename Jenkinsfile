@@ -22,7 +22,7 @@ pipeline {
  stage(‘server’) {
  
  steps {
- dir(‘C:\Users\kumarnn\Desktop\Terraform\terraform_0.12.20_windows_amd64’)
+ dir(‘/usr/local/bin/terraform/ec2-ubuntu.tf’)
  {
  sh ‘terraform init’
  sh ‘terraform plan -out=plan’
