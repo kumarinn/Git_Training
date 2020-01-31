@@ -10,13 +10,12 @@ pipeline {
  }
  stage(‘path’) {
  steps {
- script {
+
  env.PATH = “/usr/local/bin/terraform”
  }
  sh '''terraform -version
 '''
  
- }
  }
  
  stage(‘server’) {
