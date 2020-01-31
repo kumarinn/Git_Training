@@ -13,7 +13,7 @@ pipeline {
  steps {
  dir('/usr/local/bin/terraform/')
  {
- sh '''terraform init
+ sh '''sudo terraform init
 '''
  //sh ‘terraform plan -out=plan’
  // sh ‘terraform destroy -auto-approve’
