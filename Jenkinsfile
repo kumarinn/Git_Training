@@ -25,9 +25,9 @@ pipeline {
  dir(‘/usr/local/bin/terraform/ec2-ubuntu.tf’)
  {
  sh ‘terraform init’
- sh ‘terraform plan -out=plan’
+ //sh ‘terraform plan -out=plan’
  // sh ‘terraform destroy -auto-approve’
- sh ‘terraform apply plan’
+ //sh ‘terraform apply plan’
  }
  
  
