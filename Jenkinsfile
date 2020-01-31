@@ -11,7 +11,7 @@ pipeline {
  stage(‘path’) {
  steps {
  script {
- env.PATH = “C:\Users\kumarnn\Desktop\Terraform\terraform_0.12.20_windows_amd64\terraform”
+ env.PATH = “/usr/local/bin/terraform”
  }
  sh ‘terraform — version’
  
