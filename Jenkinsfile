@@ -8,7 +8,7 @@ pipeline {
  
  }
  }
- stage(‘Set Terraform path’) {
+ stage(‘path’) {
  steps {
  script {
  def tfHome = tool name: ‘Terraform’
@@ -20,7 +20,7 @@ pipeline {
  }
  }
  
- stage(‘Provision infrastructure’) {
+ stage(‘server’) {
  
  steps {
  dir(‘C:\Users\kumarnn\Desktop\Terraform\terraform_0.12.20_windows_amd64’)
