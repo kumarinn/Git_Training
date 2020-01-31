@@ -8,16 +8,7 @@ pipeline {
  
  }
  }
- stage(‘path’) {
- steps {
 
- env.PATH = “/usr/local/bin/terraform”
- sh '''terraform -version
-'''
- 
- }
- }
- 
  stage(‘server’) {
  
  steps {
