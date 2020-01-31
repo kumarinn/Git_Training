@@ -13,8 +13,8 @@ pipeline {
  script {
  env.PATH = “/usr/local/bin/terraform”
  }
- sh ‘terraform — version’
- 
+ sh '''terraform -version
+'''
  
  }
  }
