@@ -11,7 +11,7 @@ pipeline {
 
  stage(‘server’) {
  steps {
- dir('/usr/local/bin/terraform/ec2-ubuntu.tf')
+ dir('/usr/local/bin/terraform/')
  {
  sh '''terraform init
 '''
