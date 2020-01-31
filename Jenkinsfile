@@ -11,8 +11,7 @@ pipeline {
  stage(‘path’) {
  steps {
  script {
- def tfHome = tool name: ‘Terraform’
- env.PATH = “${tfHome}:${env.PATH}”
+ env.PATH = “$C:\Users\kumarnn\Desktop\Terraform\terraform_0.12.20_windows_amd64\terraform”
  }
  sh ‘terraform — version’
  
