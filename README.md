@@ -1,1 +1,0 @@
-# jira-jenkins-shared-lib
